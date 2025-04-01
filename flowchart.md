@@ -3,16 +3,16 @@
 
 ```mermaid
 graph TD;
-  A[User] -->|Requests| B[Frontend (React/Flutter)];
-  B -->|API Calls| C[Backend (Flask/FastAPI)];
-  C -->|Processes Requests| D[AI/ML Model];
-  D -->|Sends Response| C;
-  C -->|Returns Data| B;
-  B -->|Displays Output| A;
-  C -->|Data Handling| E[Database (PostgreSQL/MongoDB)];
-  E -->|Stores User Data| C;
-  C -->|External API Calls| F[Open Source Nutrition API];
-  F -->|Returns Nutrition Data| C;
+    A[User] -->|Sends Requests| B[Frontend (React/Flutter)];
+    B -->|API Calls| C[Backend (Flask/FastAPI)];
+    C -->|Processes Requests| D[AI/ML Model];
+    D -->|Sends Response| C;
+    C -->|Returns Data| B;
+    B -->|Displays Output| A;
+    C -->|Data Handling| E[Database (PostgreSQL/MongoDB)];
+    E -->|Stores User Data| C;
+    C -->|External API Calls| F[Open Source Nutrition API];
+    F -->|Returns Nutrition Data| C;
 ```
 
 ## 2. User Registration and Authentication
