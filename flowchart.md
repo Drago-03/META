@@ -3,7 +3,7 @@
 
 ```mermaid
 graph TD;
-  A[User] -->|Requests| B[Frontend (React/Flutter)];
+  A[User] -->|Requests| B [Frontend (React/Flutter)];
   B -->|API Calls| C[Backend (Flask/FastAPI)];
   C -->|Processes Requests| D[AI/ML Model];
   D -->|Sends Response| C;
